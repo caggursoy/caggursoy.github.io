@@ -1,7 +1,21 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<head>
+    <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+</head>
+
+// Putting a tooltip on an image:
+<img src="my-image.png" class="tooltip" title="This is my image's tooltip message!" />
+
+// Putting a tooltip on some text (span, div or whatever):
+<span class="tooltip" title="This is my span's tooltip message!">Some text</span>
+
+<head>
+    ...
+    <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
+</head>
