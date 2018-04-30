@@ -1,21 +1,24 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+      <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
 
-// Putting a tooltip on an image:
-<img src="lonechair.jpeg" class="tooltip" title="This is my image's tooltip message!" />
-
-// Putting a tooltip on some text (span, div or whatever):
-<span class="tooltip" title="This is my span's tooltip message!">Some text</span>
-
-    ...
-    <script>
-        $(document).ready(function() {
-          $('.tooltip').tooltipster({
-            theme: 'tooltipster-noir'
+      <script>
+          $(document).ready(function() {
+            $('.tooltip').tooltipster({
+              theme: 'tooltipster-noir'
+            });
           });
-        });
-    </script>
-</head>
+      </script>
+  </head>
+  <body>
+    // Putting a tooltip on an image:
+    <img src="lonechair.jpeg" class="tooltip" title="This is my image's tooltip message!" />
+
+    // Putting a tooltip on some text (span, div or whatever):
+    <span class="tooltip" title="This is my span's tooltip message!">Some text</span>
+  </body>
+</html>
