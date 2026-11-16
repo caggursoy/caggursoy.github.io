@@ -313,8 +313,6 @@ a.card:hover, .card.interactive:hover {
 
 .social-row a:hover { color: var(--text); border-color: var(--accent); }
 
-.resume-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
-
 /* Timeline (experience / education) */
 
 .timeline-item {
@@ -340,24 +338,6 @@ a.card:hover, .card.interactive:hover {
 .timeline-item .org { color: var(--accent-2); font-weight: 600; font-size: .95rem; margin-bottom: 4px; display: block; }
 .timeline-item .dates { color: var(--text-faint); font-size: .82rem; margin-bottom: 12px; display: block; }
 .timeline-item p:last-child { margin-bottom: 0; }
-
-/* Skill bars */
-
-.skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 32px; }
-
-.skill-row .skill-label { display: flex; justify-content: space-between; font-size: .88rem; margin-bottom: 8px; color: var(--text); }
-
-.skill-track { height: 8px; border-radius: 999px; background: var(--bg-soft); overflow: hidden; }
-
-.skill-fill {
-	height: 100%;
-	border-radius: 999px;
-	background: var(--accent-grad);
-	width: 0;
-	transition: width 1.1s ease;
-}
-
-.skill-row.in-view .skill-fill { width: var(--pct); }
 
 /* ---------- GitHub Pages projects ---------- */
 
@@ -419,7 +399,6 @@ a.card:hover, .card.interactive:hover {
 @media (max-width: 860px) {
 	.grid-3 { grid-template-columns: 1fr; }
 	.grid-2 { grid-template-columns: 1fr; }
-	.skills { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {
