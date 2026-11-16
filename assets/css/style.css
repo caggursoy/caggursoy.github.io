@@ -313,6 +313,8 @@ a.card:hover, .card.interactive:hover {
 
 .social-row a:hover { color: var(--text); border-color: var(--accent); }
 
+.social-row svg { width: 16px; height: 16px; display: block; }
+
 /* Timeline (experience / education) */
 
 .timeline-item {
